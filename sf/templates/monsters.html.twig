@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <main>
+        <div class="container" {{ stimulus_controller('pokelist') }}>
+            <table id="pokelist-table">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for monster in monsters %}
+                            <tr>
+                                <td>{{ monster.dexNumber }}</td>
+                                <td>{{ monster.name }}</td>
+                                <td><a href="{{ path('monster', {id: monster.dexNumber}) }}">X</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+            </table>
+        </div>
+    </main>
+{% endblock %}

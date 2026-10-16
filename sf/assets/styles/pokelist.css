@@ -1,0 +1,13 @@
+
+
+.container{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+table{
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>{{ monster.name }}</h1>
+                    <div class="stats">
+                        <div>
+                            <span>B:</span>
+                            <span>{{ monster.brawn }}</span>
+                        </div>
+                        <div>
+                            <span>A:</span>
+                            <span>{{ monster.dexterity }}</span>
+                        </div>
+                        <div>
+                            <span>I:</span>
+                            <span>{{ monster.brain }}</span>
+                        </div>
+                        <div>
+                            <span>PS:</span>
+                            <span>{{ monster.physicalSoak }}</span>
+                        </div>
+                        <div>
+                            <span>SS:</span>
+                            <span>{{ monster.specialSoak }}</span>
+                        </div>
+                        <div>
+                            <span>E:</span>
+                            <span>{{ monster.strain }}</span>
+                        </div>
+                        <div>
+                            <span>D:</span>
+                            <span>{{ monster.defense }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

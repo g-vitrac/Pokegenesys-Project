@@ -1,0 +1,46 @@
+
+.card{
+    box-shadow: var(--shadow);
+}
+
+.card-header{
+    width: 100%;
+    text-align: center;
+}
+
+.pokemon{
+    display: inline-block;
+    width: 33%;
+}
+
+.card{
+    background-color: white;
+    border-radius: 2em;
+    color: black;
+    padding: 1em;
+}
+
+.stats{
+    display: flex;
+    width: 100%;
+    max-width: 15em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.stats>div{
+    display: flex;
+    /*border: 1px solid black;*/
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
